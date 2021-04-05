@@ -16,6 +16,8 @@ class Simulate:
     def run(self):
         while self._event.has_next() or not self._event.event_queue.is_empty():
             next_event_type = self.get_next_event_type()
+            if Event.departure < float('inf'):
+                StatisticalCounter.area_under_bt += min(Event.arrival, Event.departure) - self._clock.get_time()
             if next_event_type == "arrival":
                 self.handle_arrival_event()
             elif next_event_type == "departure":
@@ -30,6 +32,7 @@ class Simulate:
             SystemState.server_status = 1
             StatisticalCounter.number_serviced += 1
             Event.departure = self._clock.get_time() + customer.get_service_time()
+            SystemState.current_process = customer
         SystemState.time_of_last_event = self._clock.get_time()
 
     def handle_departure_event(self):
@@ -37,6 +40,7 @@ class Simulate:
         self._clock.set_time(Event.departure)
         SystemState.time_of_last_event = self._clock.get_time()
         Event.departure = float('inf')
+        SystemState.current_process = None
         if not self._event.event_queue.is_empty():
             self.handle_arrival_event()
 
