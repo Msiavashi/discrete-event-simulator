@@ -44,6 +44,7 @@ class Event:
         self.i += 1
         self._clock.set_time(Event.arrival)
         self.predict_next_arrival_time()
+        StatisticalCounter.total_service_times += customer.get_service_time()
         return customer
 
     def get_last_generated_id(self):

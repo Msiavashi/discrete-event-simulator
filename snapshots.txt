@@ -246,4 +246,9 @@ Server Status: 1
 Number in Queue: 2
 Time of Last Event: 8.600000000000001
 ==================
-
+Analysis
+WQ: 0.9500000000000002
+W: 1.7166666666666668
+LQ: 1.151162790697675
+P or utilization: 0.8953488372093023
+L: 2.0465116279069773

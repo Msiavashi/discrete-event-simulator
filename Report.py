@@ -31,3 +31,18 @@ class Report:
         print("Time of Last Event: " + str(SystemState.time_of_last_event))
         self._snapshot_number += 1
         print("==================")
+
+    def analyze(self):
+        print("Analysis")
+        StatisticalCounter.WQ = StatisticalCounter.total_delay / StatisticalCounter.total_queued_customers
+        StatisticalCounter.W = StatisticalCounter.total_service_times / StatisticalCounter.number_serviced
+        StatisticalCounter.LQ = StatisticalCounter.area_under_qt / SimulationClock.instance.get_time()
+        StatisticalCounter.P = StatisticalCounter.area_under_bt / SimulationClock.instance.get_time()
+        StatisticalCounter.L = StatisticalCounter.P + StatisticalCounter.LQ
+        print("WQ: " + str(StatisticalCounter.WQ))
+        print("W: " + str(StatisticalCounter.W))
+        print("LQ: " + str(StatisticalCounter.LQ))
+        print("P or utilization: " + str(StatisticalCounter.P))
+        print("L: " + str(StatisticalCounter.L))
+
+
