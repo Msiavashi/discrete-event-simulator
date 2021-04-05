@@ -22,6 +22,9 @@ class Event:
         self.event_queue = EventQueue()
         self.predict_next_arrival_time()
 
+    def get_finish_event_id(self):
+        return self._finish_event_id
+
     def predict_next_arrival_time(self):
         if Event.arrival >= Event.departure:
             return
@@ -43,7 +46,10 @@ class Event:
         self.predict_next_arrival_time()
         return customer
 
+    def get_last_generated_id(self):
+        return self._c_id
+
     def has_next(self):
-        if self._c_id > self._finish_event_id:
+        if self._c_id == self._finish_event_id - 1:
             return False
         return True

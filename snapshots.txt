@@ -1,0 +1,249 @@
+*** The floating numbers are due to python floating point truncation ***
+==================
+Snapshot: 1
+Clock: 0.4
+Next Arrival Event: 1.6
+Next Departure Event: 2.4
+
+Statistical Counters:
+
+Number Serviced: 1
+Total Delay: 0
+Area Under Q(t): 0
+Area Under B(t): 0
+
+System State: 
+
+Server Status: 1
+Number in Queue: 0
+Time of Last Event: 0.4
+==================
+==================
+Snapshot: 2
+Clock: 1.6
+Next Arrival Event: 2.1
+Next Departure Event: 2.4
+
+Statistical Counters:
+
+Number Serviced: 1
+Total Delay: 0
+Area Under Q(t): 0
+Area Under B(t): 1.2000000000000002
+
+System State: 
+
+Server Status: 1
+Number in Queue: 1
+Time of Last Event: 1.6
+==================
+==================
+Snapshot: 3
+Clock: 2.1
+Next Arrival Event: 3.8
+Next Departure Event: 2.4
+
+Statistical Counters:
+
+Number Serviced: 1
+Total Delay: 0
+Area Under Q(t): 0.5
+Area Under B(t): 1.7000000000000002
+
+System State: 
+
+Server Status: 1
+Number in Queue: 2
+Time of Last Event: 2.1
+==================
+==================
+Snapshot: 4
+Clock: 2.4
+Next Arrival Event: 3.8
+Next Departure Event: 3.0999999999999996
+
+Statistical Counters:
+
+Number Serviced: 2
+Total Delay: 0.7999999999999998
+Area Under Q(t): 1.0999999999999996
+Area Under B(t): 2.0
+
+System State: 
+
+Server Status: 1
+Number in Queue: 1
+Time of Last Event: 2.4
+==================
+==================
+Snapshot: 5
+Clock: 3.0999999999999996
+Next Arrival Event: 3.8
+Next Departure Event: 3.3
+
+Statistical Counters:
+
+Number Serviced: 3
+Total Delay: 1.7999999999999994
+Area Under Q(t): 1.7999999999999994
+Area Under B(t): 2.6999999999999997
+
+System State: 
+
+Server Status: 1
+Number in Queue: 0
+Time of Last Event: 3.0999999999999996
+==================
+==================
+Snapshot: 6
+Clock: 3.3
+Next Arrival Event: 3.8
+Next Departure Event: inf
+
+Statistical Counters:
+
+Number Serviced: 3
+Total Delay: 1.7999999999999994
+Area Under Q(t): 1.7999999999999994
+Area Under B(t): 2.9
+
+System State: 
+
+Server Status: 0
+Number in Queue: 0
+Time of Last Event: 3.3
+==================
+==================
+Snapshot: 7
+Clock: 3.8
+Next Arrival Event: 4.0
+Next Departure Event: 4.9
+
+Statistical Counters:
+
+Number Serviced: 4
+Total Delay: 1.7999999999999994
+Area Under Q(t): 1.7999999999999994
+Area Under B(t): 2.9
+
+System State: 
+
+Server Status: 1
+Number in Queue: 0
+Time of Last Event: 3.8
+==================
+==================
+Snapshot: 8
+Clock: 4.0
+Next Arrival Event: 5.6
+Next Departure Event: 4.9
+
+Statistical Counters:
+
+Number Serviced: 4
+Total Delay: 1.7999999999999994
+Area Under Q(t): 1.7999999999999994
+Area Under B(t): 3.1
+
+System State: 
+
+Server Status: 1
+Number in Queue: 1
+Time of Last Event: 4.0
+==================
+==================
+Snapshot: 9
+Clock: 4.9
+Next Arrival Event: 5.6
+Next Departure Event: 8.600000000000001
+
+Statistical Counters:
+
+Number Serviced: 5
+Total Delay: 2.6999999999999997
+Area Under Q(t): 2.6999999999999997
+Area Under B(t): 4.0
+
+System State: 
+
+Server Status: 1
+Number in Queue: 0
+Time of Last Event: 4.9
+==================
+==================
+Snapshot: 10
+Clock: 5.6
+Next Arrival Event: 5.8
+Next Departure Event: 8.600000000000001
+
+Statistical Counters:
+
+Number Serviced: 5
+Total Delay: 2.6999999999999997
+Area Under Q(t): 2.6999999999999997
+Area Under B(t): 4.699999999999999
+
+System State: 
+
+Server Status: 1
+Number in Queue: 1
+Time of Last Event: 5.6
+==================
+==================
+Snapshot: 11
+Clock: 5.8
+Next Arrival Event: 7.199999999999999
+Next Departure Event: 8.600000000000001
+
+Statistical Counters:
+
+Number Serviced: 5
+Total Delay: 2.6999999999999997
+Area Under Q(t): 2.9
+Area Under B(t): 4.8999999999999995
+
+System State: 
+
+Server Status: 1
+Number in Queue: 2
+Time of Last Event: 5.8
+==================
+==================
+Snapshot: 12
+Clock: 7.199999999999999
+Next Arrival Event: 9.1
+Next Departure Event: 8.600000000000001
+
+Statistical Counters:
+
+Number Serviced: 5
+Total Delay: 2.6999999999999997
+Area Under Q(t): 5.699999999999999
+Area Under B(t): 6.299999999999999
+
+System State: 
+
+Server Status: 1
+Number in Queue: 3
+Time of Last Event: 7.199999999999999
+==================
+==================
+Snapshot: 13
+Clock: 8.600000000000001
+Next Arrival Event: 9.1
+Next Departure Event: 9.200000000000001
+
+Statistical Counters:
+
+Number Serviced: 6
+Total Delay: 5.700000000000001
+Area Under Q(t): 9.900000000000006
+Area Under B(t): 7.700000000000001
+
+System State: 
+
+Server Status: 1
+Number in Queue: 2
+Time of Last Event: 8.600000000000001
+==================
+
