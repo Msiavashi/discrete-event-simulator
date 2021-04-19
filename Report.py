@@ -35,10 +35,12 @@ class Report:
     def analyze(self):
         print("Analysis")
         StatisticalCounter.WQ = StatisticalCounter.total_delay / StatisticalCounter.total_queued_customers
-        StatisticalCounter.W = StatisticalCounter.total_service_times / StatisticalCounter.number_serviced
+        StatisticalCounter.ES = StatisticalCounter.total_service_times / StatisticalCounter.number_serviced
+        StatisticalCounter.W = StatisticalCounter.WQ + StatisticalCounter.ES
         StatisticalCounter.LQ = StatisticalCounter.area_under_qt / SimulationClock.instance.get_time()
         StatisticalCounter.P = StatisticalCounter.area_under_bt / SimulationClock.instance.get_time()
         StatisticalCounter.L = StatisticalCounter.P + StatisticalCounter.LQ
+        print("E[S]: " + str(StatisticalCounter.ES))
         print("WQ: " + str(StatisticalCounter.WQ))
         print("W: " + str(StatisticalCounter.W))
         print("LQ: " + str(StatisticalCounter.LQ))
