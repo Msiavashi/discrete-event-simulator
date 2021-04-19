@@ -40,11 +40,13 @@ class Report:
         StatisticalCounter.LQ = StatisticalCounter.area_under_qt / SimulationClock.instance.get_time()
         StatisticalCounter.P = StatisticalCounter.area_under_bt / SimulationClock.instance.get_time()
         StatisticalCounter.L = StatisticalCounter.P + StatisticalCounter.LQ
+        StatisticalCounter.X = StatisticalCounter.P / StatisticalCounter.ES
         print("E[S]: " + str(StatisticalCounter.ES))
         print("WQ: " + str(StatisticalCounter.WQ))
         print("W: " + str(StatisticalCounter.W))
         print("LQ: " + str(StatisticalCounter.LQ))
         print("P or utilization: " + str(StatisticalCounter.P))
         print("L: " + str(StatisticalCounter.L))
+        print("X: " + str(StatisticalCounter.X))
 
 
