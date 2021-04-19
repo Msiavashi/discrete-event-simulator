@@ -11,7 +11,7 @@ from StatisticalCounters import StatisticalCounter
 
 class Simulate:
     def __init__(self):
-        self._event = Event(6, 0, 2, 1, 2)
+        self._event = Event(1000000)
         self._clock = SimulationClock.instance
         self._reporter = Report()
 
@@ -29,7 +29,7 @@ class Simulate:
             if prev_queue_len:
                 StatisticalCounter.area_under_qt += prev_queue_len * (
                         self._clock.get_time() - prev_time)
-            self._reporter.print_snapshot(self._event.event_queue)
+            # self._reporter.print_snapshot(self._event.event_queue)
         self._reporter.analyze()
 
     def handle_arrival_event(self):
